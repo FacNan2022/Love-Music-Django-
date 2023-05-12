@@ -1,0 +1,39 @@
+{%extends './layout/index.html'%}
+
+{%block titulo%} inicio {%endblock%}
+
+{%block content%} <section class="informacion">
+    <h1 class="titulo" id="name"><i class="bi bi-music-note"></i> Love<strong>Music</strong> <i
+            class="bi bi-music-note-beamed"></i> </h1>
+    <h2 class="subtitulo">Tu voz es el instrumento que necesitas para cantar y disfrutar con familiares y amigos.
+    </h2>
+</section>
+<section class="tareas">
+
+    <div class="karaoke tarea">
+        <div class="capa">
+            <a href="{%url 'karaoke'%}">
+                <h1>Karaoke</h1>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="rep tarea">
+        <div class="capa">
+            <a href="{% url 'reproductor'%}">
+                <h1>Escucha tu Música</h1>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="ver-video tarea">
+        <div class="capa">
+            <a href="{%url 'video'%}">
+                <h1>Mira tus videos</h1>
+            </a>
+        </div>
+    </div>
+</section>
+{%endblock%}

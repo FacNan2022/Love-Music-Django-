@@ -1,0 +1,37 @@
+{%extends './layout/index.html'%}
+{%block titulo%}Reproductor{%endblock%}
+{%block content%}<section class="repro">
+    <div class="cap">
+        <div class="generosRepro">
+            <h2 class="genero">Género</h2>
+            <ul class="lista-generos">
+                <li class="item-genero music80">Música de los '80</li>
+                <li class="item-genero music90">Música de los '90</li>
+                <li class="item-genero latina">Música latina</li>
+                <li class="item-genero tango">Tango</li>
+                <li class="item-genero folklore">Folklore</li>
+                <li class="item-genero cumbia">Cumbia</li>
+            </ul>
+        </div>
+        <div class="canciones">
+            <article class="titulo-genero">
+                <h2 id="info"></h2>
+            </article>
+            <article class="lista-tracks">
+                <ul class="lista-canciones" id="list-track">
+                   
+                </ul>
+                <div class="reproducir" id="play">
+                    
+                </div>
+           
+            </article>
+         
+        </div>
+
+   
+    </div>
+
+
+</section>
+{%endblock%}
